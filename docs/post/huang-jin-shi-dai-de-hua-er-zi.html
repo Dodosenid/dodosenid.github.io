@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -63,12 +63,6 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
         </svg>
     </a>
     
-    <a href="https://github.com/Dodosenid/dodosenid.github.io/issues/1" target="_blank" class="btn btn-invisible circle" title="Issue">
-        <svg class="octicon" width="16" height="16">
-            <path id="pathIssue" fill-rule="evenodd"></path>
-        </svg>
-    </a>
-    
 
     <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
         <svg class="octicon" width="16" height="16" >
@@ -82,7 +76,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="markdown-body" id="postBody"><h1>登场人物</h1>
 <h2>Lillian Winters</h2>
 <h3>人物介绍：</h3>
-<p>莉莲·温特斯（Lillian Winters）本名莉莲·莉丝白·温特斯（Lillian Lizbeth Winters），伦敦西区新生戏剧演员，女演员权益联盟<sup><a href="#user-content-fn-1-d82b731b7cf1238f54bfc74886fe394f" id="user-content-fnref-1-d82b731b7cf1238f54bfc74886fe394f" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>成员。<br>
+<p>莉莲·温特斯（Lillian Winters）本名莉莲·莉丝白·温特斯（Lillian Lizbeth Winters），伦敦西区新生戏剧演员，女演员权益联盟<sup><a href="#user-content-fn-1-fa07983d461fd2a964779f843ad191d0" id="user-content-fnref-1-fa07983d461fd2a964779f843ad191d0" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>成员。<br>
 擅长演绎楚楚可怜的脆弱少女或是阴晴不定的古怪女子，闲暇之余喜好编写短剧和艺术评论，在女性剧作家之中风评不错。<br>
 父亲是中产阶级，有一定家底，投资失败后，时常酗酒，打骂母女二人，在莉莲十七岁因心梗去世。<br>
 受祖母和母亲的影响，她自幼喜爱戏剧和表演。祖母曾是红极一时的戏剧演员，而母亲曾是某剧团的杂技演员，现不再表演，负责指导表演技艺。<br>
@@ -100,18 +94,18 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h3>人物轶事</h3>
 <section data-footnotes="" class="footnotes"><h2 id="footnote-label" class="sr-only">Footnotes</h2>
 <ol>
-<li id="user-content-fn-1-d82b731b7cf1238f54bfc74886fe394f">
-<p>AFL,Actresses' Franchise League，创始人之一名叫伊丽莎白·罗宾斯。 <a href="#user-content-fnref-1-d82b731b7cf1238f54bfc74886fe394f" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+<li id="user-content-fn-1-fa07983d461fd2a964779f843ad191d0">
+<p>AFL,Actresses' Franchise League，创始人之一名叫伊丽莎白·罗宾斯。 <a href="#user-content-fnref-1-fa07983d461fd2a964779f843ad191d0" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
 </li>
 </ol>
 </section></div>
-<div style="font-size:small;margin-top:8px;float:right;"></div>
+<div style="font-size:small;margin-top:8px;float:right;">阅读愉快！</div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
 
 </div>
-    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://dodosenid.github.io">Blog Title</a></div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://dodosenid.github.io">窗外之春</a></div>
 <div id="footer2">
     <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
 </div>
@@ -120,8 +114,8 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 var now=new Date();
 document.getElementById("copyrightYear").innerHTML=now.getFullYear();
 
-if(""!=""){
-    var startSite=new Date("");
+if("03/14/2025"!=""){
+    var startSite=new Date("03/14/2025");
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
@@ -162,7 +156,7 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 
 
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
-document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
 
 
 
