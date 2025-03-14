@@ -1,6 +1,21 @@
 {
-    "title":"Blog Title",
-    "subTitle":"Blog description",
+    "title":"窗外之春",
+    "subTitle":"Dodosenid的博客，欢迎阅读我的作品。",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last"
+    "homeUrl":"http://blog.dodosenid.com",
+    "startSite":"03/14/2025",
+    "onePageListNum":10,
+    "commentLabelColor":"#660000",
+    "yearColorList":["#cc3333", "#cc337f", "#cc7f33", "#cc7f33"],
+    "i18n":"CN",
+    "UTC":8,
+    "themeMode":"manual",
+    "dayTheme":"light",
+    "nightTheme":"dark_colorblind",
+    "urlMode":"pinyin",
+    "showPostSource":0,
+    "rssSplit":"sentence",
+    "bottomText":"阅读愉快！",
+    "needComment":1,
 }
